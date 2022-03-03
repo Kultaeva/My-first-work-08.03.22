@@ -1,6 +1,6 @@
 :root {
-  --accent: #e005c3;
-  --accent-light: #ec0abb;
+  --accent: #5a1054;
+  --accent-light: #5a0b53;
 }
 
 html {
@@ -15,12 +15,12 @@ html {
 body {
   font-family: "Open Sans, sans serif";
   margin: var(--accent);
+  background-image: url(pexels-johannes-plenio-2259232.jpg);
 }
 
 .conteiner {
-  width: 1140;
+  width: 1140px;
   margin: auto;
-  padding: 0px;
 }
 .header {
   padding: 10px;
@@ -40,7 +40,7 @@ body {
 }
 .header-logo {
   float: left;
-  margin-right: 250px;
+  margin-right: 200px;
   padding-left: 150px;
   font-size: 16px;
 }
@@ -67,11 +67,13 @@ body {
 .menu-Item a:hover {
   background-color: rgb(168, 90, 241);
   color: #000;
+  padding-left: 15px;
 }
 .menu-link {
   text-transform: uppercase;
-  padding: 10px;
-  font-size: 16px;
+  padding: 12px;
+
+  font-size: 15px;
 }
 .intro {
   padding: 60px;
@@ -92,6 +94,7 @@ body {
 }
 .intro-right {
   width: 50%;
+  margin-left: 45px;
 }
 .intro-right h1,
 h3 {
@@ -99,9 +102,15 @@ h3 {
 }
 .intro-right p {
   font-style: italic;
+  font-size: 18px;
 }
 .contacts {
   margin-bottom: 60px;
+}
+.icon {
+  text-align: center;
+  margin: -5px;
+  padding-right: 10px;
 }
 .contacts ul {
   display: flex;
@@ -110,9 +119,6 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.contacts li {
-  text-align: center;
 }
 .skills {
   margin: 0px;
@@ -136,35 +142,48 @@ h3 {
   font-size: 20px;
 }
 
-.codeexample pre {
+.code-example pre {
   width: 55%;
   margin: auto;
   font-size: 1.3em;
   text-align: left;
   line-height: 35px;
   color: #fff;
-  background-color: #e005c3;
+  background-color: #5a1054;
   border-radius: 10px;
   font-style: oblique;
 }
 
 .education-section {
+  display: flex;
+  justify-content: center;
   margin: 0px;
   padding: 30px;
   color: #fff;
-  background-color: #e005c3;
+  background-color: #5a1054;
 }
-.education-paragraph {
+.education-link {
+  justify-content: left;
+  padding-left: 300px;
+  margin: 10px;
+  color: #fff;
+  background-color: var(--accent);
+  font-size: 1.2em;
   text-align: left;
+  background-color: #5a1054;
+  font-style: oblique;
 }
+
 .languages-link {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 35px;
   margin: 15px;
-  padding: 15px;
+  padding: 20px;
+  font-size: 18px;
 }
 
 .footer {
   text-align: center;
+  font-size: 18px;
 }
